@@ -1,0 +1,7 @@
+@font-face{
+    font-family: "perfect-font";
+    src:url('./font/Namdhinggo-Regular.ttf');
+}
+.App{
+    font-family:"perfect-font";
+}

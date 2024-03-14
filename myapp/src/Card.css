@@ -1,0 +1,24 @@
+.card{
+    margin:0px auto;
+    max-width: 450px;
+    box-shadow:-1px -1px 4px 4px rgb(207, 176, 176);
+    padding:30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-image: url(./Images/pink_tree_bg.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card_heading{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.card_body{
+    font-size:20px;
+}

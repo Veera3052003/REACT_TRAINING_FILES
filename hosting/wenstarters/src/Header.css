@@ -1,0 +1,277 @@
+.header{
+    position: relative;
+    display:flex; /*Makes the content vertical*/
+    background: url('./Image/header_background.jpg');
+    background-size: cover;
+    z-index:100;
+    position:-webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
+.logo{
+    height: 82px;
+    width: 89px;
+    border-radius: 50%;
+    margin-left: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list{
+    display:flex; /*Makes the content vertical*/
+    list-style-type: none;
+    justify-content: space-between;
+    width:80%;
+    font-size:51px;
+    margin-top:25px;
+}
+
+.tab_heading_style{
+    text-decoration: none;
+    color:rebeccapurple;
+}
+
+.tab_heading_style:hover{
+    background-color: rgb(247 209 219);
+    border-radius: 8px;
+    height: 60px;
+    width: 143px; 
+}
+
+.list_style{
+    height:44px;
+    width: 143px ;
+    text-align: center;
+}
+
+.drop_down{
+    display: flex;
+    justify-content: space-around;
+    width: 270px;
+    height: 189px;
+    position: absolute;
+    top: 78px;
+    right: 400px;
+    padding: 7px;
+}
+
+.option_border{
+    box-shadow: 1px 1px 5px rgb(84 76 76);
+    background-color: rgb(247 209 219);
+    width: 126px;
+    height: 50px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.option_border:hover{
+    transform:scale(1.09);
+}
+
+.option_style{
+    text-decoration: none;
+    color:rebeccapurple;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+@media(max-width:1080px){
+    .drop_down{
+        right: 274px;
+    }
+}
+
+
+/* 1024px 768px 425px 375px 320px */
+
+@media(max-width:1024px){
+
+    .drop_down {
+        width: 251px;
+        height: 170px;
+        top: 81px;
+        right: 251px;
+    }
+
+    .option_border {
+        width: 117px;
+        height: 46px;
+    }
+
+    .option_style{
+        font-size: 32px;
+    }
+
+    .list{
+        font-size:47px;
+    }
+}
+
+@media(max-width:853px){
+    .drop_down{
+        right:169px;
+    }
+}
+
+@media(max-width:768px){
+
+    .drop_down {
+        right: 130px;
+        top:69px;
+    }
+
+    .logo {
+        height: 73px;
+        width: 77px;
+        margin-left: 31px;
+    }
+
+    .list {
+        font-size:35px;
+    }
+
+    .list_style{
+        width:106px;
+    }
+
+    .tab_heading_style:hover {
+        width: 102px;
+        height: 49px;
+    }
+}
+
+@media(max-width:425px){
+
+    .logo {
+        height: 61px;
+        width: 61px;
+        margin-left: 18px;
+    }
+
+    .list {
+        font-size: 23px;
+        margin-top: 27px;
+        margin-left: -8px;
+    }
+
+    .tab_heading_style:hover {
+        height: 31px;
+        width: 66px;
+    }
+
+
+    .list_style {
+        height: 31px;
+        width: 66px;
+        text-align: center;
+    }
+
+    .drop_down {
+        right: 61px;
+        width: 131px;
+        height: 119px;
+        top: 51px 
+    }
+
+    .option_border {
+        width: 63px;
+        height: 32px;
+        margin-bottom: 1px;
+    }
+
+    .option_style {
+        font-size: 19px;
+    }
+}
+
+@media(max-width:375px){
+
+    .logo {
+        height: 52px;
+        width: 53px;
+    }
+
+    .list {
+        font-size: 22px;
+        margin-left: -20px;
+    }
+
+    .list_style {
+        width: 62px;
+    }
+
+    .tab_heading_style:hover {
+        height: 26px;
+        width: 62px;
+    }
+
+    .drop_down {
+        right: 54px;
+        top: 47px;
+    }
+}
+
+@media(max-width:320px){
+    .logo{
+        height: 43px;
+        width: 46px;
+        border-radius: 50%;
+        margin-left: 17px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .list{
+        width: 77%;
+        font-size: 17px;
+        margin-top: 25px;
+        margin-left: -20px;
+    }
+    
+    .tab_heading_style:hover{
+        height: 20px;
+        width: 49px;
+    }
+    
+    .list_style{
+        height: 23px;
+        width: 49px;
+        text-align: center;
+    }
+    
+    .drop_down{
+        width: 93px;
+        height: 76px;
+        top: 39px;
+        right: 60px;
+        padding: 6px;
+    }
+    
+    .option_border{
+        width: 42px;
+        height: 20px;
+        margin-bottom: 1px;
+        text-align: center;
+    }
+    
+    .option_border:hover{
+        transform:scale(1.09);
+    }
+    
+    .option_style{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    
+}
+
+
+/* .tab_heading_style:hover::before{
+    top:10px;
+    background-image: url('./Image/chef_hat.jpg');
+    height:100px;
+    width:50px;
+
+} */

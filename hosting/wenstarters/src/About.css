@@ -1,0 +1,148 @@
+.about-content{
+    display:flex;
+    flex-direction: column;
+    max-width: 1020px;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    padding-top:50px;
+    padding-bottom: 90px;
+    text-align:justify;
+}
+
+  .para {
+    margin-top:50px;
+    font-size:40px;
+  }
+  
+  .about_card{
+    margin:auto;
+    padding:62px;
+    background-color: beige;
+    border-radius:64px;
+    box-shadow: 0px 0px 11px 0px black;
+    height:1090px;
+  }
+
+@media(max-width:1080px){
+
+    .about-content{
+        max-width: 888px;
+    }
+
+    .about_card{
+        height: 1246px;
+    }
+}
+
+@media(max-width:1024px){
+
+    .about-content{
+        max-width:769px;
+    }
+    
+    .para{
+        font-size:38px;
+    }
+
+    .about_card {
+        height: 1355px;
+    }
+}
+
+@media(max-width:853px){
+
+    .about_card{
+        height: 1367px;
+    }
+}
+
+@media(max-width:768px){
+
+    .about-content {
+        max-width: 560px;
+        text-align: justify;
+        background-size: 130px 130px;
+    }
+
+    .para {
+        margin-top: 21px;
+        font-size:28px;
+    }
+
+    .about_card{
+        padding:59px;
+        height: 1071px;
+    }
+}
+
+@media(max-width:425px){
+
+    .about-content {
+        max-width: 336px;
+        text-align: justify;
+        padding-top: 34px;
+        background-size: 111px 94px;
+    }
+
+    .para {
+        margin-top: 4px;
+        font-size: 20px;
+    }
+
+    .about_card{
+        padding:36px;
+        border-radius: 37px;
+        height: 937px;
+    }
+}
+
+@media(max-width:375px){
+    
+    .about-content {
+        max-width: 300px;
+        padding-top: 29px;
+    }
+
+    .para {
+        font-size: 18px;
+    }
+
+    .about_card{
+        border-radius: 31px;
+        height: 874px;
+    }
+}
+
+
+@media(max-width:320px){
+    .about-content{
+        max-width: 235px;
+        padding-top:10px;
+        padding-bottom: 65px;
+        background-size: 76px 76px;
+    }
+    
+    .para{
+        margin-top:20px;
+        font-size:17px;
+    }
+
+    .about_card{
+        padding:22px;
+        border-radius: 22px;
+        height: 908px;
+    }
+}
+
+/* div .animate{
+    filter:blur(5px);
+    transition: 1s;
+    opacity: 0;
+}
+
+div .show-animate .animate{
+    filter:blur(0);
+    opacity: 1;
+    transition:1s;
+} */

@@ -1,0 +1,66 @@
+.BackToTopButtonStyle{
+    position: fixed;
+    bottom:50px;
+    right:50px;
+    height: 55px;
+    width: 59px;
+    font-size: 58px;
+    line-height: 1.2;
+    border-radius:50%;
+    background-color: rebeccapurple;
+    color:black;
+}
+
+@media(max-width:1024px){
+
+    .BackToTopButtonStyle {
+        height: 49px;
+        width: 53px;
+        font-size: 43px;
+        line-height: 1.4;
+        margin-right: -21px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .BackToTopButtonStyle {
+        height: 35px;
+        width: 38px;
+        font-size: 32px;
+        margin-right: -28px;
+    }
+}
+
+@media(max-width:425px){
+
+    .BackToTopButtonStyle {
+        bottom: 39px;
+        height: 31px;
+        width: 34px;
+        font-size: 29px;
+        margin-right: -27px;
+    }
+
+}
+
+@media(max-width:375px){
+
+    .BackToTopButtonStyle {
+        bottom: 19px;
+        height: 23px;
+        width: 24px;
+        font-size: 22px;
+        margin-right: -28px;
+    }
+
+}
+
+@media(max-width:320px){
+    .BackToTopButtonStyle {
+        bottom: 97px;
+    }
+
+}
+

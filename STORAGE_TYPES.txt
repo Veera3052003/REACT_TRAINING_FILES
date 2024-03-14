@@ -1,0 +1,130 @@
+We can store data in browsers in 5 types.
+
+Storage Types
+
+1. Cookie
+    - Disadvantage: Max 4MB.
+    - the data will be available in
+ the browser and at the same time
+ can be accessed by the server.
+
+2. Local Storage (Maximun usecase)
+    - In local storage, the data are
+ persistant,i.e. even after closing
+ the website or refreshing the data
+ remains. 
+    - data will be saved as key,
+ value pair.
+    - webstorage API.
+    - it was started using after 
+ HTML.
+    - Advantage: Min 5MB, Based on
+ browser and OS we can store as 
+ much we needed.
+    - the data will be available
+ only in the browser and cannot 
+ access by the server.
+    - for each and every website
+ there will be separate local 
+ storage based on the origin.
+NOTE: origin is nothing but
+protocol://domain:port
+http://www.amazon.in:80
+protocol:http,https,ftp
+domain:amazon.in, facebook.com
+port:80,8080,3000
+(when u don't see port in URL, then
+it's default port is 80)
+   - for different protocols, there
+ will be different web storage.
+
+3. Session Storage (Minimum usecase)
+    - In session storage, the data are
+ not persistant,i.e. after closing 
+ the website the data erased.
+ Note: But when we reload the 
+ webpage, the data remains.
+    - data will be saved as key,
+ value pair.
+    - webstorage API.
+    - it was started using after 
+ HTML.
+    - the data will be available
+ only in the browser and cannot 
+ access by the server.
+
+4. Indexed DB
+5. Cache
+
+How to local storage and session
+storage - Visiualize browser 
+storage
+
+1. Click inspect
+2. Search for application 
+3. Every types of storage will be
+   present
+4. local storage can be accessed
+   in the console using the below
+   command.
+
+   localStorage.getItem('theme')
+   'light'
+
+NOTE: both the key value pairs will
+be strings.
+
+   localStorage.setItem('name','veera')
+
+   localStorage.setItem('name','lakshmi')
+NOTE: this will replace the value veera
+and write lakshmi.
+
+   localStorage.remove('name')
+NOTE: delete the key name
+
+   localStorage.clear()
+NOTE: clear every key value parir
+in the storage.
+
+NOTE: the above functions are same
+for both the local and session
+storage. Just u have to access
+the above functions using the 
+keyword sessionStorage
+
+Since every key value pairs can
+only be string.
+
+->We can give the key as string
+->At the same time we can give the
+value as object, to display that
+object as string, we have to use
+JSON.stringify() function.
+
+localStorage.setItem('name',JSON.
+ stringify({name:"veera"}))
+to print the object value as string
+in the console..
+JSON.stringify({name:"veera"})
+o/p: '{"name":"veera"}'
+
+NOTE:
+localStorage.getItem('name')
+o/p: '{"name":"veera"}'
+i.e. it will display as string
+ .
+. . to get the value as object,
+we can use JSON.parse() function
+JSON.parse(localStorage.getItem('name'))
+o/p:{name:'kishore'}
+
+npm run build
+
+firebase deploy
+
+
+"winBuild": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build"
+
+npm run winBuild
+
